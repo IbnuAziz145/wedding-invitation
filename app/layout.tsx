@@ -20,7 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Pernikahan Arga & Nimas — 20 Desember 2026",
+  title: "Pernikahan Ridwan & Rani",
   description:
     "Dengan penuh kebahagiaan, kami mengundang Anda untuk menyaksikan dan memberikan doa restu atas pernikahan Arga Pradipta & Nimas Dyah Ayu Lestari pada Sabtu, 20 Desember 2026 di Grand Ballroom Nusantara, Yogyakarta.",
   keywords: [

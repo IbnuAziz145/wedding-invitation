@@ -47,6 +47,7 @@ export interface InvitationData {
   couple: CoupleInfo;
   event: EventInfo;
   gift: GiftInfo;
+  gift2: GiftInfo;
   story: StoryItem[];
   gallery: GalleryImage[];
   hashtag: string;

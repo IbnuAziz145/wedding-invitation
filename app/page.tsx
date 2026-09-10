@@ -50,10 +50,17 @@ export default function WeddingPage() {
         <OpeningScreen guestName={guestName} onOpen={() => setOpened(true)} />
       )}
 
+      <div
+        className={`fixed top-4 right-16 z-40 ${
+          opened ? "" : "invisible pointer-events-none"
+        }`}
+      >
+        <MusicPlayer />
+      </div>
+
       {opened && (
         <>
-          <div className="fixed top-4 right-4 z-40 flex items-center gap-2">
-            <MusicPlayer />
+          <div className="fixed top-4 right-4 z-40">
             <ThemeToggle />
           </div>
 

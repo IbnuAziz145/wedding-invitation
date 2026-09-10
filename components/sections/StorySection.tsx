@@ -122,7 +122,7 @@ export function StorySection() {
         <div className="flex flex-col gap-10">
           {story.map((item, i) => (
             <StoryCard
-              key={item.year}
+              key={`${item.year}-${item.title}`}
               item={item}
               index={i}
               isLeft={i % 2 === 0}

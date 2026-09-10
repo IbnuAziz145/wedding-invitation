@@ -11,7 +11,7 @@ interface MusicPlayerProps {
 }
 
 export function MusicPlayer({
-  src = "/audio/wedding-music.mp3",
+  src = "/audio/Wedding%20Nasheed%20-%20Muhammad%20Al%20Muqit%20_%20Lyrics%20Arabic%20%2B%20Terjemahan%20_%20%F0%9D%98%88%F0%9D%98%B3%F0%9D%98%A2%F0%9D%98%A3%F0%9D%98%AA%F0%9D%98%A4%20%F0%9D%98%95%F0%9D%98%A2%F0%9D%98%B4%F0%9D%98%A9%F0%9D%98%A6%F0%9D%98%A6%F0%9D%98%A5%20_%20%D9%85%D8%AD%D9%85%D8%AF%20%D8%A7%D9%84%D9%85%D9%82%D9%8A%D8%B7.mp3",
   className,
 }: MusicPlayerProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -27,9 +27,22 @@ export function MusicPlayer({
 
     audio.addEventListener("canplaythrough", onCanPlay);
     audio.addEventListener("ended", onEnded);
+
+    const attemptAutoPlay = () => {
+      audio.volume = 0.5;
+      audio.loop = true;
+      void audio.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
+    };
+
+    attemptAutoPlay();
+    window.addEventListener("pointerdown", attemptAutoPlay, { once: true });
+    window.addEventListener("keydown", attemptAutoPlay, { once: true });
+
     return () => {
       audio.removeEventListener("canplaythrough", onCanPlay);
       audio.removeEventListener("ended", onEnded);
+      window.removeEventListener("pointerdown", attemptAutoPlay);
+      window.removeEventListener("keydown", attemptAutoPlay);
     };
   }, []);
 
@@ -54,7 +67,7 @@ export function MusicPlayer({
 
   return (
     <>
-      <audio ref={audioRef} src={src} preload="metadata" aria-hidden />
+      <audio ref={audioRef} src={src} preload="auto" autoPlay aria-hidden />
       <motion.button
         onClick={togglePlay}
         className={cn(

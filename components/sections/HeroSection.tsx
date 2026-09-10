@@ -46,6 +46,14 @@ export function HeroSection() {
           >
             {couple.groomFull}
           </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            className="max-w-sm font-sans text-xs leading-relaxed text-[color:var(--text-muted)] sm:text-sm"
+          >
+            {couple.groomParents}
+          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
@@ -65,6 +73,14 @@ export function HeroSection() {
           >
             {couple.brideFull}
           </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.7 }}
+            className="max-w-sm font-sans text-xs leading-relaxed text-[color:var(--text-muted)] sm:text-sm"
+          >
+            {couple.brideParents}
+          </motion.p>
         </div>
 
         <Reveal delay={0.9} direction="up">

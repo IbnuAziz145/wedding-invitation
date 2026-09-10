@@ -37,4 +37,4 @@ export const EASING = {
   inExpo: [0.95, 0.05, 0.795, 0.035] as const,
 };
 
-export const WEDDING_DATE = new Date("2026-12-20T08:00:00+07:00");
+export const WEDDING_DATE = new Date("2026-09-24T08:00:00+07:00");

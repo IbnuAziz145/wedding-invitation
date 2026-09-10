@@ -33,7 +33,12 @@ export function RsvpSection() {
     e.preventDefault();
     setErrors({});
 
-    const parsed = rsvpSchema.safeParse({ name, attendance, guestCount, message });
+    const parsed = rsvpSchema.safeParse({
+      name,
+      attendance,
+      guestCount,
+      message,
+    });
     if (!parsed.success) {
       const fe: FormErrors = {};
       for (const issue of parsed.error.issues) {
@@ -78,7 +83,7 @@ export function RsvpSection() {
             <div className="gold-divider w-24" aria-hidden />
             <p className="font-sans text-sm text-[color:var(--text-secondary)] max-w-sm text-balance">
               Mohon konfirmasi kehadiran Anda paling lambat{" "}
-              <strong className="text-[#D4AF37]">10 Desember 2026</strong>.
+              <strong className="text-[#D4AF37]">20 Desember 2026</strong>.
             </p>
           </div>
         </Reveal>
@@ -202,7 +207,10 @@ export function RsvpSection() {
                         htmlFor="guestCount"
                         className="text-sm font-medium text-[color:var(--text-secondary)]"
                       >
-                        <Users className="inline h-3.5 w-3.5 mr-1 text-[#D4AF37]" aria-hidden />
+                        <Users
+                          className="inline h-3.5 w-3.5 mr-1 text-[#D4AF37]"
+                          aria-hidden
+                        />
                         Jumlah Tamu
                       </label>
                       <div className="flex items-center gap-3">
@@ -254,7 +262,10 @@ export function RsvpSection() {
                   />
 
                   {state.status === "error" && (
-                    <p className="rounded-xl bg-red-500/10 px-4 py-3 text-sm text-red-400" role="alert">
+                    <p
+                      className="rounded-xl bg-red-500/10 px-4 py-3 text-sm text-red-400"
+                      role="alert"
+                    >
                       {state.message}
                     </p>
                   )}

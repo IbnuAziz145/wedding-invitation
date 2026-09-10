@@ -7,9 +7,9 @@ import { Reveal } from "@/components/motion/Reveal";
 import { invitationData } from "@/data/invitation";
 import { copyToClipboard } from "@/lib/utils";
 import { cn } from "@/lib/utils";
+import type { GiftInfo } from "@/types/invitation";
 
-function AccountCard() {
-  const { gift } = invitationData;
+function AccountCard({ cardId, gift }: { cardId: string; gift: GiftInfo }) {
   const [copied, setCopied] = useState<"number" | null>(null);
 
   async function handleCopy(text: string, type: "number") {
@@ -70,8 +70,8 @@ function AccountCard() {
               whileTap={{ scale: 0.9 }}
               aria-label={
                 copied === "number"
-                  ? "Nomor rekening tersalin"
-                  : "Salin nomor rekening"
+                  ? `Nomor rekening ${cardId} tersalin`
+                  : `Salin nomor rekening ${cardId}`
               }
             >
               <AnimatePresence mode="wait" initial={false}>
@@ -126,7 +126,7 @@ export function GiftSection() {
       className="py-24 section-padding overflow-hidden"
       aria-label="Informasi hadiah dan rekening"
     >
-      <div className="mx-auto max-w-md">
+      <div className="mx-auto max-w-2xl">
         <Reveal direction="up">
           <div className="mb-12 flex flex-col items-center gap-3 text-center">
             <span className="font-sans text-xs uppercase tracking-[0.4em] text-[color:var(--text-muted)]">
@@ -144,11 +144,16 @@ export function GiftSection() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.15} direction="up">
-          <AccountCard />
-        </Reveal>
+        <div className="grid gap-5 md:grid-cols-2">
+          <Reveal delay={0.15} direction="up">
+            <AccountCard cardId="1" gift={invitationData.gift} />
+          </Reveal>
+          <Reveal delay={0.25} direction="up">
+            <AccountCard cardId="2" gift={invitationData.gift2} />
+          </Reveal>
+        </div>
 
-        <Reveal delay={0.25} direction="up">
+        <Reveal delay={0.35} direction="up">
           <p className="mt-6 text-center font-sans text-xs text-[color:var(--text-muted)] leading-relaxed">
             Konfirmasi transfer dapat dikirimkan melalui WhatsApp kepada
             keluarga pengantin. Terima kasih atas kebaikan hati Anda.

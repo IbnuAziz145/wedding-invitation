@@ -196,7 +196,7 @@ export function GuestbookSection() {
 
                   <Textarea
                     label="Pesan & Doa"
-                    placeholder="Tuliskan ucapan tulus Anda untuk Arga & Nimas..."
+                    placeholder="Tuliskan ucapan tulus Anda untuk Ridwan & Rani..."
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     error={errors.message}
@@ -253,7 +253,11 @@ export function GuestbookSection() {
                 </p>
               ) : (
                 entries.map((entry, i) => (
-                  <EntryCard key={`${entry.timestamp}-${i}`} entry={entry} index={i} />
+                  <EntryCard
+                    key={`${entry.timestamp}-${i}`}
+                    entry={entry}
+                    index={i}
+                  />
                 ))
               )}
             </div>

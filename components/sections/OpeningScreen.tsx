@@ -47,7 +47,11 @@ export function OpeningScreen({ guestName, onOpen }: OpeningScreenProps) {
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.19, 1, 0.22, 1] }}
+              transition={{
+                duration: 0.8,
+                delay: 0.2,
+                ease: [0.19, 1, 0.22, 1],
+              }}
               className="flex flex-col items-center gap-1"
             >
               <span className="font-sans text-xs uppercase tracking-[0.3em] text-[color:var(--text-muted)]">
@@ -88,14 +92,18 @@ export function OpeningScreen({ guestName, onOpen }: OpeningScreenProps) {
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 1.1, ease: [0.19, 1, 0.22, 1] }}
+              transition={{
+                duration: 0.7,
+                delay: 1.1,
+                ease: [0.19, 1, 0.22, 1],
+              }}
               className="flex flex-col items-center gap-1"
             >
               <p className="font-sans text-sm text-[color:var(--text-muted)]">
-                Sabtu, 20 Desember 2026
+                Kamis, 24 September 2026
               </p>
               <p className="font-sans text-sm text-[color:var(--text-muted)]">
-                Grand Ballroom Nusantara, Yogyakarta
+                Rumah Mempelai Wanita
               </p>
             </motion.div>
 
@@ -118,7 +126,11 @@ export function OpeningScreen({ guestName, onOpen }: OpeningScreenProps) {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 1.6, ease: [0.19, 1, 0.22, 1] }}
+              transition={{
+                duration: 0.7,
+                delay: 1.6,
+                ease: [0.19, 1, 0.22, 1],
+              }}
             >
               <motion.button
                 onClick={handleOpen}
@@ -152,7 +164,11 @@ export function OpeningScreen({ guestName, onOpen }: OpeningScreenProps) {
             <motion.div
               className="h-8 w-0.5 bg-gradient-to-b from-[#D4AF37]/50 to-transparent"
               animate={{ scaleY: [1, 0, 1] }}
-              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             />
             <span className="font-sans text-[10px] uppercase tracking-[0.2em] text-[color:var(--text-muted)]">
               Scroll
