@@ -17,7 +17,7 @@ export function FooterSection() {
   async function handleShare() {
     const shareData = {
       title: `Pernikahan ${couple.groomFull} & ${couple.brideFull}`,
-      text: `Anda diundang ke pernikahan ${couple.groomFull} & ${couple.brideFull} pada Sabtu, 20 Desember 2026 di Yogyakarta. ${hashtag}`,
+      text: `Anda diundang ke pernikahan ${couple.groomFull} & ${couple.brideFull} pada Rabu, 23 September 2026 di Bogor. ${hashtag}`,
       url: SITE_URL,
     };
 
@@ -46,10 +46,7 @@ export function FooterSection() {
     >
       <FloatingParticles count={14} className="z-0" />
 
-      <div
-        className="absolute inset-0 z-0 pointer-events-none"
-        aria-hidden
-      >
+      <div className="absolute inset-0 z-0 pointer-events-none" aria-hidden>
         <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D4AF37]/25 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#D4AF37]/3 to-transparent" />
       </div>

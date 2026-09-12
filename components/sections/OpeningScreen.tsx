@@ -100,10 +100,7 @@ export function OpeningScreen({ guestName, onOpen }: OpeningScreenProps) {
               className="flex flex-col items-center gap-1"
             >
               <p className="font-sans text-sm text-[color:var(--text-muted)]">
-                Kamis, 24 September 2026
-              </p>
-              <p className="font-sans text-sm text-[color:var(--text-muted)]">
-                Rumah Mempelai Wanita
+                Rabu, 23 September 2026
               </p>
             </motion.div>
 
@@ -134,7 +131,7 @@ export function OpeningScreen({ guestName, onOpen }: OpeningScreenProps) {
             >
               <motion.button
                 onClick={handleOpen}
-                className="group relative overflow-hidden rounded-full bg-[#D4AF37] px-10 py-4 font-sans text-sm font-semibold text-[#2A1E12] shadow-[0_8px_32px_rgba(212,175,55,0.4)]"
+                className="group relative overflow-hidden rounded-full bg-[ D4AF37] px-10 py-4 font-sans text-sm font-semibold text-[#2A1E12] shadow-[0_8px_32px_rgba(212,175,55,0.4)]"
                 whileHover={{
                   scale: 1.04,
                   boxShadow: "0 12px 40px rgba(212,175,55,0.55)",

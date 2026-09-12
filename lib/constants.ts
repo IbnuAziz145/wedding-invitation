@@ -1,8 +1,7 @@
-export const APPS_SCRIPT_URL =
-  process.env.NEXT_PUBLIC_APPS_SCRIPT_URL ?? "";
+export const APPS_SCRIPT_URL = process.env.NEXT_PUBLIC_APPS_SCRIPT_URL ?? "";
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://arga-nimas.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://ridwan-rani.vercel.app";
 
 export const RSVP_COOLDOWN_MS = 30_000;
 export const GUESTBOOK_COOLDOWN_MS = 15_000;
@@ -37,4 +36,4 @@ export const EASING = {
   inExpo: [0.95, 0.05, 0.795, 0.035] as const,
 };
 
-export const WEDDING_DATE = new Date("2026-09-24T08:00:00+07:00");
+export const WEDDING_DATE = new Date("2026-09-23T08:00:00+07:00");

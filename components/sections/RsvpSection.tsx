@@ -83,7 +83,7 @@ export function RsvpSection() {
             <div className="gold-divider w-24" aria-hidden />
             <p className="font-sans text-sm text-[color:var(--text-secondary)] max-w-sm text-balance">
               Mohon konfirmasi kehadiran Anda paling lambat{" "}
-              <strong className="text-[#D4AF37]">20 Desember 2026</strong>.
+              <strong className="text-[#D4AF37]">23 September 2026</strong>.
             </p>
           </div>
         </Reveal>

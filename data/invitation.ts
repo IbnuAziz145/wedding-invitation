@@ -20,7 +20,7 @@ export const invitationData: InvitationData = {
         "Kp. Wangun Rt 002/Rw 010 Desa. Pangkal jaya kec. Nanggung Kab. Bogor Jawa Barat",
       city: "Bogor",
       mapsUrl:
-        "https://www.google.com/maps?q=-6.6145383,106.552145&z=17&hl=id",
+        "https://www.google.com/maps?q=-6.6102021,106.5550749&z=17&hl=id",
       mapsLabel: "Rumah Mempelai Wanita",
     },
     reception: {
@@ -32,7 +32,8 @@ export const invitationData: InvitationData = {
       address:
         "jl. Raya Antam Kp. Cadasleueur Rt.002/Rw 001 Desa Bantarkaret kec. Nanggung Kab.Bogor",
       city: "Bogor",
-      mapsUrl: "https://maps.google.com/?q=Grand+Ballroom+Nusantara+Yogyakarta",
+      mapsUrl:
+        "https://www.google.com/maps?q=-6.6150289,106.5527041&z=17&hl=id",
       mapsLabel: "Rumah Mempelai Pria",
     },
   },
@@ -75,16 +76,10 @@ export const invitationData: InvitationData = {
       year: "2026",
       title: "Pernikahan",
       description:
-        "Sabtu, 24 Desember 2026. Hari yang paling dinantikan. Kami mengundang Anda menjadi saksi momen bahagia ini.",
+        "Rabu, 23 September 2026. Hari yang paling dinantikan. Kami mengundang Anda menjadi saksi momen bahagia ini.",
     },
   ],
   gallery: [
-    {
-      src: "/images/foto-1.jpg",
-      alt: "Ridwan dan Rani — Foto Pre-Wedding 1",
-      width: 854,
-      height: 1280,
-    },
     {
       src: "/images/foto-2.jpg",
       alt: "Ridwan dan Rani — Foto Pre-Wedding 2",
@@ -120,18 +115,6 @@ export const invitationData: InvitationData = {
       alt: "Ridwan dan Rani — Foto Pre-Wedding 7",
       width: 1122,
       height: 1402,
-    },
-    {
-      src: "/images/foto-8.jpg",
-      alt: "Ridwan dan Rani — Foto Pre-Wedding 8",
-      width: 1086,
-      height: 1448,
-    },
-    {
-      src: "/images/foto-9.jpg",
-      alt: "Ridwan dan Rani — Foto Pre-Wedding 9",
-      width: 714,
-      height: 1280,
     },
   ],
   hashtag: "#RidwanRani2026",

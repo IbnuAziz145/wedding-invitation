@@ -22,19 +22,19 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Pernikahan Ridwan & Rani",
   description:
-    "Dengan penuh kebahagiaan, kami mengundang Anda untuk menyaksikan dan memberikan doa restu atas pernikahan Arga Pradipta & Nimas Dyah Ayu Lestari pada Sabtu, 20 Desember 2026 di Grand Ballroom Nusantara, Yogyakarta.",
+    "Dengan penuh kebahagiaan, kami mengundang Anda untuk menyaksikan dan memberikan doa restu atas pernikahan Ridwan & Rani pada Rabu, 23 September 2026 di Bogor.",
   keywords: [
     "pernikahan",
     "wedding",
-    "Arga Pradipta",
-    "Nimas Dyah Ayu Lestari",
+    "Ridwan",
+    "Rani Rahmawati",
     "undangan digital",
-    "Yogyakarta",
+    "Bogor",
     "2026",
-    "#ArgaNimas2026",
+    "#RidwanRani2026",
   ],
-  authors: [{ name: "Arga & Nimas" }],
-  creator: "Arga & Nimas",
+  authors: [{ name: "Ridwan & Rani" }],
+  creator: "Ridwan & Rani",
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: SITE_URL,
@@ -53,26 +53,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    title: "Pernikahan Arga & Nimas — 20 Desember 2026",
+    title: "Pernikahan Ridwan & Rani — 23 September 2026",
     description:
-      "Kami mengundang Anda untuk menyaksikan dan memberikan doa restu atas pernikahan kami. Sabtu, 20 Desember 2026, Grand Ballroom Nusantara, Yogyakarta.",
-    siteName: "Undangan Pernikahan Arga & Nimas",
+      "Kami mengundang Anda untuk menyaksikan dan memberikan doa restu atas pernikahan kami. Rabu, 23 September 2026, Bogor.",
+    siteName: "Undangan Pernikahan Ridwan & Rani",
     locale: "id_ID",
     images: [
       {
-        url: `${SITE_URL}/images/og-image.png`,
-        width: 1200,
-        height: 630,
-        alt: "Pernikahan Arga Pradipta & Nimas Dyah Ayu Lestari",
+        url: `${SITE_URL}/images/foto-2.jpg`,
+        width: 1280,
+        height: 960,
+        alt: "Pernikahan Ridwan & Rani",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pernikahan Arga & Nimas — 20 Desember 2026",
+    title: "Pernikahan Ridwan & Rani — 23 September 2026",
     description:
-      "Kami mengundang Anda untuk menyaksikan momen bahagia kami. Sabtu, 20 Desember 2026, Yogyakarta.",
-    images: [`${SITE_URL}/images/og-image.png`],
+      "Kami mengundang Anda untuk menyaksikan momen bahagia kami. Rabu, 23 September 2026, Bogor.",
+    images: [`${SITE_URL}/images/foto-2.jpg`],
   },
 };
 
