@@ -88,14 +88,14 @@ export function HeroSection() {
             <div className="gold-divider w-32" aria-hidden />
             <div className="flex flex-col items-center gap-1.5">
               <p className="font-sans text-sm font-medium uppercase tracking-[0.25em] text-[#D4AF37]">
-                {event.akad.day}, {new Date(event.akad.date).toLocaleDateString("id-ID", {
+                {event.reception.day}, {new Date(event.reception.date).toLocaleDateString("id-ID", {
                   day: "numeric",
                   month: "long",
                   year: "numeric",
                 })}
               </p>
               <p className="font-sans text-sm text-[color:var(--text-muted)]">
-                {event.akad.venue} — {event.akad.city}
+                {event.reception.venue} — {event.reception.city}
               </p>
             </div>
             <p className="font-sans text-xs text-[color:var(--text-muted)] tracking-wider">
