@@ -34,7 +34,7 @@ function AccountCard({ cardId, gift }: { cardId: string; gift: GiftInfo }) {
               Transfer ke
             </p>
             <p className="font-serif text-base font-semibold text-[color:var(--text-primary)]">
-              Bank {gift.bankName}
+              {gift.bankName.toLowerCase() === "dana" ? "DANA" : `Bank ${gift.bankName}`}
             </p>
           </div>
         </div>
